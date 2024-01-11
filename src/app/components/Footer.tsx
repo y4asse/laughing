@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg-gray-100 text-[#585858]">
+    <div className="bg-gray-100 text-[#585858] px-5">
       <div className="max-w-[800px] mx-auto py-10">
         <div>
           <a href="https://github.com/y4asse/laughing">このサイトのコード</a>
