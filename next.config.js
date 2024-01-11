@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
+  reactStrictMode: false,
+  output: 'export',
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, encoding: false }
+    return config
+  }
 }
 
 module.exports = nextConfig
