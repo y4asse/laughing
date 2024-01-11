@@ -61,17 +61,29 @@ const Main = () => {
     )
   }
   return (
-    <div className="h-screen px-3 bg-gray-100 pt-10">
-      <video ref={videoRef} autoPlay={true} className="mx-auto max-w-[500px] w-full" />
-      <div className="text-4xl text-center mt-5">{happy ? `${Math.round(happy * 100)} %` : '顔が検出できません'}</div>
-      {happy && (
-        <div className="max-w-[500px] mx-auto border border-green-500">
-          <div
-            style={{ width: `${Math.round(happy * 100)}%` }}
-            className={`bg-green-500 h-10 duration-300 transition-all`}
-          />
+    <div className="h-screen px-3">
+      <iframe
+        className="w-full max-w-[800px] mx-auto aspect-[16/9]"
+        src="https://www.youtube.com/embed/GoLpSJ8Bfpc"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen={false}
+      ></iframe>
+      <div>
+        <div>
+          <div className="max-w-[300px] mx-auto border border-green-500 h-10">
+            {happy && (
+              <div
+                style={{ width: `${Math.round(happy * 100)}%` }}
+                className={`bg-green-500 h-10 duration-500 transition-all`}
+              />
+            )}
+          </div>
+          <div className="text-4xl text-center mt-1">
+            {happy ? `${Math.round(happy * 100)} %` : '顔が検出できません'}
+          </div>
         </div>
-      )}
+        <video hidden={true} ref={videoRef} autoPlay={true} className="mx-auto max-w-[300px] w-full" />
+      </div>
     </div>
   )
 }
