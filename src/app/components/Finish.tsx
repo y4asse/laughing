@@ -2,7 +2,7 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 const Finish = () => {
   const text = '「絶対に笑ってはいけないサイト」で笑ってしまいました\n\n'
-  const url = 'https://laughing.pages.dev'
+  const url = 'https://do-not-laugh.pages.dev'
   const hashtags = '絶対に笑ってはいけないサイト'
   return (
     <div className="mx-auto max-w-[1000px]">
