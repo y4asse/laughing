@@ -61,7 +61,9 @@ const Main = () => {
   if (isMobile) {
     return (
       <div className="p-3 text-center">
-        <p role="error message">このサイトはPCでのみご利用いただけます。</p>
+        <p className="text-red-500 font-bold" role="error message">
+          このサイトはPCでのみご利用いただけます。
+        </p>
       </div>
     )
   }
