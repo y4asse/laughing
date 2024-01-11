@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: '絶対に笑ってはいけないサイト',
   description: 'このサイトは、カメラを用いて笑いを検知します。サイト内にある動画を見て笑わないように頑張りましょう。',
   openGraph: {
-    images: '/imgs/warai.png'
+    images: 'https://dont-laugh.pages.dev//imgs/warai.png'
   },
   twitter: {
     title: '絶対に笑ってはいけないサイト',
-    images: '/imgs/warai.png',
+    images: 'https://dont-laugh.pages.dev/imgs/warai.png',
     card: 'summary'
   }
 }
