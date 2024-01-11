@@ -7,7 +7,8 @@ const Finish = () => {
   return (
     <div className="mx-auto max-w-[1000px]">
       <div>
-        <p className="text-5xl text-center mt-10">敗北！！！</p>
+        <p className="text-5xl text-center mt-20 font-bold">アウト！！！！！！</p>
+        <p className="text-2xl text-center mt-10">笑ってはだめですよ！！！！</p>
         <div className="flex items-center justify-center mt-10 text-5xl">
           <a
             href={`https://twitter.com/share?text=${encodeURIComponent(text)}&url=${url}&hashtags=${hashtags}`}
